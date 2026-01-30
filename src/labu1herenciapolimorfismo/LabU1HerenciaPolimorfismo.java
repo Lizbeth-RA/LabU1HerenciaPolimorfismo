@@ -24,6 +24,9 @@ public class LabU1HerenciaPolimorfismo {
         Media book = new Book("Java How To Program", "Deitel", 500);
         
         Media music = new Music("Imagine", "John Lennon", "Rock");
+        
+        //Añadiendo un objeto de mi subclase Game
+        Media game = new Game("The Legend of Zelda", "Nintendo", "Switch");
 
         
         // TODO 25: Crea un objeto de tipo MediaLibrary llamado mediaLibrary
@@ -37,6 +40,10 @@ public class LabU1HerenciaPolimorfismo {
         mediaLibrary.addLibrary(book);
         mediaLibrary.addLibrary(music);
         
+        //Llamada al método addLibrary del objeto mediaLibrary 
+        //y asignandolo al nuevo medio 
+        mediaLibrary.addLibrary(game);
+        
         
         // TODO 27: Ahora llama al método playAllItems del objeto mediaLibrary
         // para poner en play todos tus medios o items
@@ -48,6 +55,7 @@ public class LabU1HerenciaPolimorfismo {
         // Reading Java How To Program by Deitel with 500 pages
         // Listening to Imagine by Jhon Lennon in the Rock genre
         // Si lo lograste ¡¡¡Felicidades!!!
+        
     }
     
 }
